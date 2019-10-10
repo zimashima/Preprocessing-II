@@ -7,7 +7,15 @@ nav{
     .border-btm();
     padding: 20px 40px 20px 40px;
 
+    @media @mobile{
+        max-width: 100%;
+        .row-to-col();
+        text-align: center;
+    }
+
     .btm-nav{
+        padding: 10px;
+
         a {
             font-size: 1.6rem;
             color: @font-color;
