@@ -129,6 +129,19 @@ table {
 * {
   box-sizing: border-box;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+div,
+section,
+header,
+nav,
+img {
+  border: 1px solid gray;
+}
 html {
   font-size: 62.5%;
 }
@@ -167,6 +180,23 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+nav {
+  width: 880px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px dashed #C0C0C0;
+  padding: 20px 40px 20px 40px;
+}
+nav .btm-nav a {
+  font-size: 1.6rem;
+  color: #212529;
+  text-decoration: none;
+  padding: 10px;
+}
+nav .btm-nav a:visited {
+  text-decoration: none;
 }
 .footer {
   width: 100%;
@@ -224,4 +254,11 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+header {
+  padding-bottom: 10px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+header img {
+  padding-bottom: 10px;
 }
