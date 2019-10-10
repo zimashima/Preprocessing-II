@@ -105,6 +105,49 @@
     }//closes destination
 
   }//closes content-pick
+
+  .theform{
+    width: 70%;
+    margin: 0 auto;
+    padding: 3%;
+    .btmpad(30px);
+  
+    @media @phone{
+      width: 100%;
+    }
+  
+    input[type=text]{
+      width: 100%;
+      padding: 2%;
+      margin: 0 auto;
+      display: block;
+    }
+
+    select{
+      width: 100%;
+      padding: 2%;
+      margin: 0 auto;
+      display: block;
+    }
+    
+    textarea{
+      width: 100%;
+      height: 150px;
+      margin-bottom: 20px;
+      resize: none;
+    }
+    
+    input[type=submit] {
+      width: 100%;
+      background-color:@button-bg;
+      color: @white;
+      font-size: 1.9rem;
+      padding: 2%;
+      border: none;
+      border-radius: 4px;
+    }
+  }
+
 }// home
 
 //my code starts here
@@ -129,3 +172,9 @@ header{
 .exp-sign-up {
   .custm-btn();
 }
+
+
+// form
+
+
+
