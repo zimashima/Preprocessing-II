@@ -1,1 +1,39 @@
 // Mixins in here
+.border-btm(){
+    border-bottom: 2px dashed @navigation-border;
+}
+
+.toppad(@padsize: 10px){
+    padding-top: @padsize;
+}
+
+.btmpad(@padsize: 10px){
+    padding-bottom: @padsize;
+}
+
+.flex-switch(@row-or-col){
+    display: flex;
+    flex-direction: @row-or-col;
+    justify-content: center;
+}
+
+.nopad(){
+    padding: 0;
+}
+
+
+.custm-btn(@bg-btn: @button-bg, @width: 100%, @txt-color:@white){
+    display:block;
+    width: @width;
+    border-radius: 10px;
+    margin:0 auto;
+    background-color: @bg-btn;
+    color: @txt-color;
+    font-size: 1.6rem;
+    .toppad(5px);
+    .btmpad(5px);
+      
+    &:hover {
+    background-color: darken(@bg-btn, 5%)
+    }
+}
